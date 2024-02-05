@@ -6,7 +6,7 @@ function Cards() {
       <h6 style={{ color: "green", textAlign: "center", marginBottom: "20px" , marginTop: "30px"}}>
         Start Donating Now{" "}
       </h6>
-      <h1 style={{ textAlign: "center" }}>Our Services</h1>
+      <h1 style={{ textAlign: "center" }} className="tittle">Our Services</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card food-card" style={{ textAlign: "center" }}>

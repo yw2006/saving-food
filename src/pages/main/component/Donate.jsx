@@ -1,24 +1,64 @@
 import React from "react";
 import "../style/Donate.css";
 import { Carousel } from "react-bootstrap";
+import { useState } from "react";
 
 function Donate() {
+  const [donationAmount, setDonationAmount] = useState("");
+
+  const handleBtnClick = (amount) => {
+    setDonationAmount(amount);
+  };
+
+  const handleCustomBtnClick = () => {
+    setDonationAmount("");
+  };
+
   const imgStyle = {
-    width: "10%", // Adjust the width as needed
-    marginRight: "10px", // Add spacing between images
+    width: "10%",
+    marginRight: "10px",
   };
 
   return (
     <div className="container-fluid">
       <div className="first  row">
-      <div className="sec row">
-        <h1 className="heading " >
-          Let’s Together Protect and Enhance Environment for our Future
-          Generation
-        </h1>
-
-      </div>
-      <button
+        <div className="donation-form ">
+          <h1 className="row">Make a Donation</h1>
+          <p>
+            Nostra dapibus varius et semper semper rutrum ad risus felis eros
+            majority have suffered alteration
+          </p>
+          <input
+            type="text"
+            value={donationAmount}
+            onChange={(e) => setDonationAmount(e.target.value)}
+          />
+          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(50)}>
+            50
+          </a>
+          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(100)}>
+            100
+          </a>
+          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(200)}>
+            200
+          </a>
+          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(500)}>
+            500
+          </a>
+          <a href="#" className="btn d-btn" onClick={handleCustomBtnClick}>
+            Custome
+          </a>
+          <a href="#" className="btn b-btn">
+            Donate Now
+          </a>
+        </div>
+        <div className="sec row">
+          <h1 className="heading ">
+            Let’s Together Protect and Enhance Environment for our Future
+            Generation
+          </h1>
+        </div>
+        <button
           type="button"
           class="btn btn-outline-warning text-light  start-btn "
           style={{
@@ -32,7 +72,7 @@ function Donate() {
           Start Donating
         </button>
       </div>
-      
+
       <div className="row slider">
         <Carousel
           interval={3000}
