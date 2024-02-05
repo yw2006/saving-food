@@ -1,0 +1,28 @@
+.food-card{
+    border: none;
+
+}
+
+.donation-nums{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.icon-link:hover svg {
+    transform: translateX(5px);
+}
+
+.icon-link:hover {
+    color: green;
+}
+
+.icon-link {
+    color: black; /* Default color */
+   
+    align-items: center;
+}
