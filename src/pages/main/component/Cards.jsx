@@ -12,7 +12,7 @@ function Cards() {
           <div class="card food-card" style={{ textAlign: "center" }}>
             <img
               src="https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="card-img-top"
+              className="card-img-top"
               alt="..."
             />
             

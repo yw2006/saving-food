@@ -3,13 +3,13 @@ import "../style/Signboard.css";
 function Signboard() {
   return (
     <div className="container board" >
-      <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row1">
-        <div className="col col-md-1 pic " style={{ marginLeft: "0px" }} >
-          <img   className="sora"
+      <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row1 justify-content-between ">
+        <div className="col-4 col-md-1 pic " >
+          <img   className="sora w-100  d-block "
             src="https://i.pinimg.com/564x/ba/6f/81/ba6f81c6c452c3965aff9bd81cc0a06f.jpg"
             alt=""
           />
-          <div class="text-block">
+          <div className="text-block">
             <p>For any inquiries call the hotline: 666 888 0000</p>
           </div>
         </div>
