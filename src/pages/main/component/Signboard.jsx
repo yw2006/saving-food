@@ -2,10 +2,10 @@ import React from "react";
 import "../style/Signboard.css";
 function Signboard() {
   return (
-    <div className="container" >
+    <div className="container board" >
       <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row1">
         <div className="col col-md-1 pic " style={{ marginLeft: "0px" }} >
-          <img   
+          <img   className="sora"
             src="https://i.pinimg.com/564x/ba/6f/81/ba6f81c6c452c3965aff9bd81cc0a06f.jpg"
             alt=""
           />

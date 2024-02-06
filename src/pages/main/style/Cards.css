@@ -26,3 +26,12 @@
    
     align-items: center;
 }
+.card-title:hover{
+    color: green;
+
+}
+
+.tittle:hover {
+    transform: scale(1.1);
+  }
+  

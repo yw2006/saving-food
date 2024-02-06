@@ -45,4 +45,70 @@
   
   
   }
+
+  @media (max-width: 1000px) {
+    .row1 {
+      font-size: 20px !important;
+      width:590px ;
+    }
+    .board{
+      margin: auto !important;
+      
+
+    }
+   
+
+    
+
+    
+  }
+
+  @media (max-width: 600px) {
+    .row1 {
+      width:470px ;
+    }
+    .sora{
+      width:440px !important;
+
+    }
+    .board{
+      margin: auto !important;
+      
+
+    }
+    .text h1{
+      font-size: 20px !important;
+
+    }
+    .text p{
+      font-size: 15px !important;
+
+    }
+    .text li{
+      font-size: 15px !important;
+
+    }
+    
+
+    
+  }
+  @media (min-width: 1001px) and (max-width: 1199px) {
+    .board {
+      width: 700px;
+    }
+  
+    .sora {
+      width: 700px !important;
+      margin-left: 100px;
+    }
+  
+    .text-block {
+      left: 112px;
+    }
+  }
+  
+
+
+  
+  
   
