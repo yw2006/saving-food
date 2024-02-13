@@ -1,8 +1,8 @@
 import React from "react";
 import "./style/navbar.css"
 export default function Navbar(){
-    return
-    <>
+    return <>
+    
     <div className="container">
   <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
@@ -192,6 +192,5 @@ export default function Navbar(){
     </div>
   </nav>
 </div>
-
     </>
 }
