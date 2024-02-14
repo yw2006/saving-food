@@ -7,11 +7,21 @@ import { Route, Routes } from "react-router-dom";
 import Signboard from "./pages/main/component/Signboard";
 import Cards from "./pages/main/component/Cards";
 import Donate from './pages/main/component/Donate';
-import Main from "./pages/main/index";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />}/>
+      <Route
+        path="/"
+        element={
+          <>
+            <h1>hello</h1>
+          </>
+        }
+      />
+      <Route path="/Signboard" element={<Signboard />} />
+      <Route path="/Cards" element={<Cards />} />
+      <Route path="/Donate" element={<Donate />} />
+
     </Routes>
   );
 };
