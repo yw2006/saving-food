@@ -1,0 +1,19 @@
+.supportparent{
+    background-image: url("https://i.ibb.co/qR2QVB2/pexels-ricky-esquivel-1701893.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.donatingbtn{
+    border: 3px solid #f69846;
+    border-radius: 45px;
+    background: none;
+    padding: 0.8%;
+    transition:all ease-in-out 0.3s;
+}
+.donatingbtn:hover{
+    background-color: #f69846;
+}
+.supportheader{
+    font-weight: bolder;
+    font-size: 45px;
+}
