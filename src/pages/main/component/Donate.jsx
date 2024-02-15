@@ -28,11 +28,16 @@ function Donate() {
             Nostra dapibus varius et semper semper rutrum ad risus felis eros
             majority have suffered alteration
           </p>
-          <input
-            type="text"
-            value={donationAmount}
-            onChange={(e) => setDonationAmount(e.target.value)}
-          />
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+
+            <input
+              type="text" aria-label="Amount (to the nearest dollar)"
+              value={donationAmount}
+              onChange={(e) => setDonationAmount(e.target.value)}
+            />
+          </div>
+
           <a href="#" className="btn d-btn" onClick={() => handleBtnClick(50)}>
             50
           </a>
