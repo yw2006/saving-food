@@ -9,11 +9,13 @@ import Support from "../main/component/Support";
 import SwipperCardsDonationLanding from "./component/SwipperCardsDonationLanding";
 import Footer from "../../commn/Footer.jsx";
 import Landing from "./component/Landing";
+import Banner from "./component/Banner.jsx"
 const Main = () => (
   <>
     <Navbar />
     <Navabar2 />
     <Landing/>
+    <Banner />
     <Signboard />
     <Cards />
     <DonateForm />
