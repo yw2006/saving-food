@@ -6,6 +6,8 @@ import Navabar2 from "../../commn/navbar";
 import Feedbacks from "../main/component/Feedbacks";
 import Volanteers from "./component/Volanteers";
 import Support from "../main/component/Support";
+import SwipperCardsDonationLanding from "./component/SwipperCardsDonationLanding";
+import Footer from "../../commn/Footer.jsx";
 const Main = () => (
   <>
     <Navbar />
@@ -14,8 +16,10 @@ const Main = () => (
     <Cards />
     <DonateForm />
     <Feedbacks />
-    <Volanteers/>
+    <Volanteers />
     <Support />
+    <SwipperCardsDonationLanding />
+    <Footer />
   </>
 );
 export default Main;
