@@ -16,9 +16,6 @@ const App = () => {
           <Main />
         }
       />
-      <Route path="/Signboard" element={<Signboard />} />
-      <Route path="/Cards" element={<Cards />} />
-      <Route path="/Donate" element={<Donate />} />
     </Routes>
   );
 };
