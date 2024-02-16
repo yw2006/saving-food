@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import { useQuery } from "@tanstack/react-query";
 import "./App.css";
 import "./pages/main/index";
@@ -13,14 +12,17 @@ import Login from "./pages/Login/Login";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
+      <Route
+        path="/"
+        element={
+          <Main/>
+        }
+      />
       <Route path="/Signboard" element={<Signboard />} />
       <Route path="/Cards" element={<Cards />} />
       <Route path="/Donate" element={<Donate />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/login" element={<Login/>}/>
+
     </Routes>
   );
 };
-
 export default App;

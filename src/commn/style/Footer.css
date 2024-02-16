@@ -1,0 +1,15 @@
+.backGroundFooter{
+    background-color: black;
+    color: white;
+    padding: 80px;
+    .container{
+        .row{
+            .categories{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

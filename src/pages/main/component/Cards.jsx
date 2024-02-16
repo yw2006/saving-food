@@ -1,9 +1,10 @@
 import React from "react";
 import "../style/Cards.css";
 function Cards() {
+
   return (
     <div className="container " style={{ width: "1100px" }}>
-      <h6 style={{ color: "green", textAlign: "center", marginBottom: "20px" , marginTop: "30px"}}>
+      <h6 style={{ color: "green", textAlign: "center", marginBottom: "20px", marginTop: "30px" }}>
         Start Donating Now{" "}
       </h6>
       <h1 style={{ textAlign: "center" }} className="tittle">Our Services</h1>
@@ -12,12 +13,12 @@ function Cards() {
           <div class="card food-card" style={{ textAlign: "center" }}>
             <img
               src="https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=600"
-              className="card-img-top"
+              class="card-img-top"
               alt="..."
             />
-            
-              
-              <div class="card-body" >
+
+
+            <div class="card-body" >
               <h6 className="donation-nums" >
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
@@ -30,17 +31,17 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{width: "25%", backgroundColor: 'orange'}}></div>
+                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Donation </h5>
               <p class="card-text">
                 Nostra dapibus varius et semper semper rutrum ad risus felis
                 eros
               </p>
-              <a href="#"  className="icon-link" style={{ textDecoration: "none" }}>
+              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}
                 <svg
-                  style={{ marginRight: "5px" , color: "green"}}
+                  style={{ marginRight: "5px", color: "green" }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -63,7 +64,7 @@ function Cards() {
               alt="..."
             />
             <div class="card-body">
-              <h6  className="donation-nums"  >
+              <h6 className="donation-nums"  >
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
               </h6>
@@ -75,17 +76,17 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{width: "25%", backgroundColor: 'orange'}}></div>
+                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Recycling </h5>
               <p class="card-text">
                 Nostra dapibus varius et semper semper rutrum ad risus felis
                 eros
               </p>
-              <a href="#"   className="icon-link" style={{  textDecoration: "none" }}>
+              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}
                 <svg
-                  style={{ marginRight: "5px" , color: "green"}}
+                  style={{ marginRight: "5px", color: "green" }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -108,7 +109,7 @@ function Cards() {
               alt="..."
             />
             <div class="card-body">
-              <h6  className="donation-nums" >
+              <h6 className="donation-nums" >
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
               </h6>
@@ -120,17 +121,17 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{width: "25%", backgroundColor: 'orange'}}></div>
+                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Protection</h5>
               <p class="card-text">
                 Nostra dapibus varius et semper semper rutrum ad risus felis
                 eros
               </p>
-              <a href="#"   className="icon-link" style={{  textDecoration: "none" }}>
+              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}
                 <svg
-                  style={{ marginRight: "5px" , color: "green"}}
+                  style={{ marginRight: "5px", color: "green" }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"

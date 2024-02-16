@@ -1,0 +1,28 @@
+*{
+margin: 0;
+padding: 0;
+}
+.baner{
+    width: 100%;
+    height: 40vh;
+    
+    background-image: url("https://kodesolution.com/2022/ecoife/home2/wp-content/uploads/sites/5/2022/02/lines.png");
+    background-repeat: no-repeat;
+   
+}
+.background-overlay{
+    
+    background-color: #f0c239;
+    opacity: 0.95;   
+}
+.button{
+    margin-left: 35%;  
+    padding-top: 4%;
+}
+.baton{
+   
+}
+.text{
+    margin-left: 10%;
+
+}

@@ -1,0 +1,48 @@
+.container_section {
+    padding: 50px;
+    background-color: rgba(222, 227, 223, 0.533);
+    padding: 20px;
+    .text_cards_swiper{
+        text-align: center;
+        line-height: 20px;
+        .first_text_swiper_section_cards{
+            font-size: 20px;
+            margin-top: 16px;
+                color: green;
+        }
+        .second_text_swiper_section_cards {
+            color: rgb(150, 162, 150);
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .card-body{
+        position: relative;
+    }
+    .specailDateCard{
+        padding: 10px 15px;
+        background-color: orange;
+        position: absolute;
+        top: -38px;
+        left: 0px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    .btn_card_swiper {
+        position: relative;
+        background-color: rgb(66, 185, 66);
+        transition: .1s ease-in;
+        padding: 9px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+    
+        .btn_card_swiper:hover {
+            background-color: rgb(31, 194, 31);
+        }
+}
+
