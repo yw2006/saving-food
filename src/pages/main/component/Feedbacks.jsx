@@ -97,7 +97,7 @@ export default function Feedbacks() {
                                 {feedback.donaterfeedback}
                               </p>
                             </div>
-                              <hr />
+                            <hr />
                             <div class="card-body text-center">
                               <img
                                 src={feedback.donatorimage}
