@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Egyptian Food Bank",
+    "description": "The Egyptian Food Bank is a non-profit organization that aims to fight hunger and food insecurity in Egypt.",
+    "website": "https://www.egyptianfoodbank.com/"
+  },
+  {
+    "id": 2,
+    "name": "Misr El Kheir Foundation",
+    "description": "Misr El Kheir Foundation is an Egyptian charitable organization that focuses on social development and community welfare projects.",
+    "website": "https://www.misrelkheir.org/"
+  },
+  {
+    "id": 3,
+    "name": "Resala Charity Organization",
+    "description": "Resala is a non-profit organization in Egypt that provides various social services and support to underprivileged individuals and communities.",
+    "website": "https://resala.org/"
+  },
+  {
+    "id": 4,
+    "name": "Basma Association",
+    "description": "Basma Association for Comprehensive Development is an Egyptian NGO that works on community development projects, particularly in health and education.",
+    "website": "https://www.basma-eg.com/"
+  },
+  {
+    "id": 5,
+    "name": "Ezbet Project",
+    "description": "Ezbet Project is a charitable initiative that focuses on improving living conditions and providing support to residents of informal settlements in Egypt.",
+    "website": "https://www.ezbetproject.org/"
+  },
+  {
+    "id": 6,
+    "name": "Egyptian Cancer Society",
+    "description": "The Egyptian Cancer Society is a non-profit organization dedicated to cancer prevention, treatment, and support services in Egypt.",
+    "website": "https://www.egyptiancancersociety.org/"
+  },
+  {
+    "id": 7,
+    "name": "Sawiris Foundation for Social Development",
+    "description": "Sawiris Foundation for Social Development is an Egyptian NGO that focuses on education, health, and community development projects.",
+    "website": "https://sawirisfoundation.org/"
+  },
+  {
+    "id": 8,
+    "name": "Coptic Evangelical Organization for Social Services",
+    "description": "The Coptic Evangelical Organization for Social Services (CEOSS) is an Egyptian NGO that provides development and relief services to marginalized communities.",
+    "website": "https://www.ceoss.org.eg/"
+  }
+]

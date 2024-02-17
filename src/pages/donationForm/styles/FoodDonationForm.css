@@ -1,0 +1,64 @@
+/* FoodDonationPage.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  background-image: url('https://i.ibb.co/r7gNwTB/signupbackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure the container covers the entire viewport height */
+  display: flex;
+  align-items: center; /* Center the content vertically */
+}
+
+.FormContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4caf50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -9,6 +9,7 @@ import Donate from "./pages/main/component/Donate";
 import Main from "./pages/main/index";
 import SignUp from "./pages/Sign up/Signup";
 import Login from "./pages/Login/Login";
+import FoodDonationForm from "./pages/donationForm/componets/form";
 const App = () => {
   return (
     <Routes>
@@ -18,11 +19,9 @@ const App = () => {
           <Main/>
         }
       />
-      <Route path="/Signboard" element={<Signboard />} />
-      <Route path="/Cards" element={<Cards />} />
-      <Route path="/Donate" element={<Donate />} />
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/donation" element={<FoodDonationForm/>} />
     </Routes>
   );
 };
