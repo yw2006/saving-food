@@ -47,15 +47,20 @@ function SignUpForm() {
   };
 
   return (
-    <div className="container-fluid d-flex align-items-center pagecontainer h-100 row w-100">
-      <div className="form-container p-5 col-sm-12">
+    <div className="container-fluid d-flex align-items-center pagecontainer h-100 w-100 loginpagecontainer">
+      <div className="form-container p-5 w-100">
         <form onSubmit={handleSubmit} className="col-sm-12">
           <h2 className="text-white col-sm-12">LOGIN</h2>
           <p className="text-white">
-            Don't have an account? <Link to="/signup" className="loginlink">Create an account</Link>
+            Don't have an account?{" "}
+            <Link to="/signup" className="loginlink">
+              Create an account
+            </Link>
           </p>
           <div className="form-group">
-            <label htmlFor="email" className="text-white pb-2 pt-2">Email:</label>
+            <label htmlFor="email" className="text-white pb-2 pt-2">
+              Email:
+            </label>
             <br />
             <input
               type="email"
@@ -67,7 +72,9 @@ function SignUpForm() {
             {errors.email && <p className="error text-white">{errors.email}</p>}
           </div>
           <div className="form-group">
-            <label htmlFor="password" className="text-white pb-2 pt-2">Password:</label>
+            <label htmlFor="password" className="text-white pb-2 pt-2">
+              Password:
+            </label>
             <br />
             <input
               type="password"
@@ -76,9 +83,13 @@ function SignUpForm() {
               value={password}
               onChange={handleChange}
             />
-            {errors.password && <p className="error text-white">{errors.password}</p>}
+            {errors.password && (
+              <p className="error text-white">{errors.password}</p>
+            )}
           </div>
-          <button type="submit" className="submitbutton mt-4">Create account</button>
+          <button type="submit" className="submitbutton mt-4">
+            Create account
+          </button>
         </form>
       </div>
     </div>

@@ -21,7 +21,8 @@ const App = () => {
       <Route path="/Signboard" element={<Signboard />} />
       <Route path="/Cards" element={<Cards />} />
       <Route path="/Donate" element={<Donate />} />
-
+      <Route path="/signup" element={<SignUp/>}/>
+      <Route path="/login" element={<Login/>}/>
     </Routes>
   );
 };

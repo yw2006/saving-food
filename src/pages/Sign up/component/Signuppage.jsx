@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import '../style/signup.css'
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -66,8 +66,8 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="container-fluid d-flex align-items-center pagecontainer h-100 row w-100">
-      <div className="form-container p-5 col-sm-12 text-white">
+    <div className="container-fluid  align-items-center pagecontainer h-100 w-100 signuppagecontainer">
+      <div className="form-container p-5 text-white w-100">
         <h2 className="">JOIN OUR COMMUNITY</h2>
         <p className="text-white">
             Already have an account? <Link to="/login" className="loginlink">Login</Link>
@@ -114,6 +114,7 @@ const SignUpForm = () => {
               name="birthDate"
               value={formData.birthDate}
               onChange={handleChange}
+              className="date-input"
             />
             {errors.birthDate && <p>{errors.birthDate}</p>}
           </div>

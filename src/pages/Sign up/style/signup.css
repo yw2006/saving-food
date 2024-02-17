@@ -1,10 +1,11 @@
 @media only screen and (min-width: 768px) {
-    body {
+    .signuppagecontainer {
       background-image: url("https://i.ibb.co/r7gNwTB/signupbackground.jpg");
       background-size: cover;
-      color: white;
     }
-
+    .date-input{
+      padding: 5px;
+    }
     .form-container input {
       background-color: rgba(120, 120, 120, 0.628);
       opacity: 50%;
@@ -32,13 +33,16 @@
     }
   }
 @media only screen and (max-width: 768px) {
-    body {
+    .signuppagecontainer {
         background-image: url("https://i.ibb.co/r7gNwTB/signupbackground.jpg");
         background-size: cover;
       }
-      .form-container {
-        margin-left: 4%;
-        width: 25%;
+      .date-input{
+        padding: 5px;
+      }
+      body{
+        margin: 0;
+        padding: 0;
       }
       .form-container input {
         background-color: rgba(120, 120, 120, 0.628);
