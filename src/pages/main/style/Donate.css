@@ -13,7 +13,7 @@
   padding: 13px;
 }
 
-.input-group-text {
+.donation-form .input-group-text {
   background-color: rgb(63, 150, 113) !important;
   color: white !important;
   height: 40px !important;
@@ -66,7 +66,7 @@
   margin-bottom: 25px;
 }
 
-.input-group input {
+.donation-form .input-group input {
   background-color: rgb(233, 233, 233);
   border-radius: 20px;
   border: none;

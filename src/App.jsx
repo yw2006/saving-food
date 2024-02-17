@@ -9,6 +9,8 @@ import Donate from "./pages/main/component/Donate";
 import Main from "./pages/main/index";
 import SignUp from "./pages/Sign up/Signup";
 import Login from "./pages/Login/Login";
+import Error from "./pages/404/component/error";
+import Faq from "./pages/Faq/component/Faq";
 const App = () => {
   return (
     <Routes>
@@ -23,6 +25,10 @@ const App = () => {
       <Route path="/Donate" element={<Donate />} />
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/404" element={<Error/>}/>
+      <Route path="/Faq" element={<Faq/>}/>
+
+
     </Routes>
   );
 };
