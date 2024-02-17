@@ -9,7 +9,6 @@ import Donate from "./pages/main/component/Donate";
 import Main from "./pages/main/index";
 import SignUp from "./pages/Sign up/Signup";
 import Login from "./pages/Login/Login";
-import FoodDonationForm from "./pages/donationForm/componets/form";
 const App = () => {
   return (
     <Routes>
@@ -21,7 +20,6 @@ const App = () => {
       />
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/donation" element={<FoodDonationForm/>} />
     </Routes>
   );
 };
