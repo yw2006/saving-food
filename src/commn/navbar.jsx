@@ -49,12 +49,12 @@ export default function Navbar(){
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/404">
                   404
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/Faq">
                   FAQ
                 </a>
               </li>
