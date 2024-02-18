@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../../../commn/Navabar";
 import Navabar2 from "../../../commn/navbar";
 import Footer from "../../../commn/Footer.jsx";
