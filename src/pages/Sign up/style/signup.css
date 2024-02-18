@@ -80,4 +80,11 @@
         text-decoration: none;
         font-weight: bold;
     }
+    .select{
+      width: 100%;
+      background-color: rgba(120, 120, 120, 0.628);
+      border-radius: 8px;
+      opacity: 50%;
+      color: white;
+    }
   }
