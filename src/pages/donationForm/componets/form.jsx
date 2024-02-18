@@ -1,20 +1,20 @@
-import  {  useState } from "react";
+import { useState } from "react";
 import "../styles/FoodDonationForm.css"; // Import your custom CSS file
 
 function FoodDonationForm() {
- const [formData, setFormData] = useState({
-   foodItems: "",
-   expirationDate: "",
-   packagingCondition: "",
-   allergenInfo: "",
-   quantity: "",
-   donorName: "",
-   donorEmail: "",
-   donorPhone: "",
-   adrress: "",
-   charities: "",
-   pickupDetails: "",
- });
+  const [formData, setFormData] = useState({
+    foodItems: "",
+    expirationDate: "",
+    packagingCondition: "",
+    allergenInfo: "",
+    quantity: "",
+    donorName: "",
+    donorEmail: "",
+    donorPhone: "",
+    adrress: "",
+    charities: "",
+    pickupDetails: "",
+  });
   const [charities, setcharities] = useState([
     {
       id: 1,
@@ -73,87 +73,86 @@ function FoodDonationForm() {
       website: "https://www.ceoss.org.eg/",
     },
   ]);
- const [errors, setErrors] = useState({});
-const successCallback = (position) => {
-  setFormData({adrress:position})
-};
+  const [errors, setErrors] = useState({});
+  const successCallback = (position) => {
+    setFormData({ adrress: position });
+  };
 
-const errorCallback = (error) => {
-    return <>something wrong when i get location {error.message}</>
-};
+  const errorCallback = (error) => {
+    return <>something wrong when i get location {error.message}</>;
+  };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
- const handleChange = (e) => {
-   const { name, value } = e.target;
-   setFormData({
-     ...formData,
-     [name]: value,
-   });
- };
+  const validateForm = () => {
+    const newErrors = {};
 
- const validateForm = () => {
-   const newErrors = {};
+    if (!formData.foodItems.trim()) {
+      newErrors.foodItems = "Food Items is required";
+    }
+    if (!formData.charities.trim()) {
+      newErrors.foodItems = "charity is required";
+    }
+    // Add validation for other fields similarly
+    if (!formData.quantity.trim()) {
+      newErrors.quantity = "Quantity is required";
+    }
+    if (!formData.packagingCondition.trim()) {
+      newErrors.packagingCondition = "packaging Condition is required";
+    }
+    if (!formData.allergenInfo.trim()) {
+      newErrors.allergenInfo = "Allergen Information is required";
+    }
+    if (!formData.donorName.trim()) {
+      newErrors.donorName = "Quantity is required";
+    }
+    if (!formData.donorEmail.trim()) {
+      newErrors.donorEmail = "Donor Email is required";
+    } else if (!isValidEmail(formData.donorEmail.trim())) {
+      newErrors.donorEmail = "Invalid email format";
+    }
+    if (!formData.donorPhone.trim()) {
+      newErrors.donorPhone = "Donor Phone is required";
+    } else if (!isValidPhone(formData.donorPhone.trim())) {
+      newErrors.donorPhone = "Invalid phone number";
+    }
 
-   if (!formData.foodItems.trim()) {
-     newErrors.foodItems = "Food Items is required";
-   }
-   if (!formData.charities.trim()) {
-     newErrors.foodItems = "charity is required";
-   }
-   // Add validation for other fields similarly
-   if (!formData.quantity.trim()) {
-     newErrors.quantity = "Quantity is required";
-   }
-   if (!formData.packagingCondition.trim()) {
-     newErrors.packagingCondition = "packaging Condition is required";
-   }
-   if (!formData.allergenInfo.trim()) {
-     newErrors.allergenInfo = "Allergen Information is required";
-   }
-   if (!formData.donorName.trim()) {
-     newErrors.donorName = "Quantity is required";
-   }
-   if (!formData.donorEmail.trim()) {
-     newErrors.donorEmail = "Donor Email is required";
-   } else if (!isValidEmail(formData.donorEmail.trim())) {
-     newErrors.donorEmail = "Invalid email format";
-   }
-   if (!formData.donorPhone.trim()) {
-     newErrors.donorPhone = "Donor Phone is required";
-   } else if (!isValidPhone(formData.donorPhone.trim())) {
-     newErrors.donorPhone = "Invalid phone number";
-   }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-   setErrors(newErrors);
-   return Object.keys(newErrors).length === 0;
- };
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
 
- const isValidEmail = (email) => {
-   return /\S+@\S+\.\S+/.test(email);
- };
+  const isValidPhone = (phone) => {
+    return /^\d{10}$/.test(phone);
+  };
 
- const isValidPhone = (phone) => {
-   return /^\d{10}$/.test(phone);
- };
-
- const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-   e.preventDefault();
-   
-   if (validateForm()) {
-     // Handle form submission
-     console.log("Form submitted!", formData);
-   }
- };
+    e.preventDefault();
+
+    if (validateForm()) {
+      // Handle form submission
+      console.log("Form submitted!", formData);
+    }
+  };
   return (
     <div className="page-container">
       <div className="FormContainer container  mt-5">
-        <h2 className="text-center mb-4">Food Donation Form</h2>
+        <h2 className="text-center mb-4 donate_title">Food Donation Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="row  justify-content-around  ">
             <div className="col-md-5">
-              <div className="form-group">
-                <label>Food Items:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Food Items:</label>
                 <select
                   className="form-control"
                   name="foodItems"
@@ -170,11 +169,11 @@ const errorCallback = (error) => {
                   <div className="text-danger">{errors.foodItems}</div>
                 )}
               </div>
-              <div className="form-group">
-                <label>Packaging Condition:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Packaging Condition:</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="packagingCondition"
                   value={formData.packagingCondition}
                   onChange={handleChange}
@@ -183,19 +182,21 @@ const errorCallback = (error) => {
               {errors.packagingCondition && (
                 <div className="text-danger">{errors.packagingCondition}</div>
               )}
-              <div className="form-group">
-                <label>charities :</label>
+              <div className="donate-form-group">
+                <label className="donate_label">charities :</label>
                 <select
                   className="form-control"
                   name="charities"
                   value={formData.charities}
                   onChange={handleChange}
                 >
-                  <option value="">Select  Charity</option>
+                  <option value="">Select Charity</option>
                   {charities?.map((charity) => {
-                    return <option key={charity.website} value={charity.name}>
-                      {charity.name}
-                    </option>;
+                    return (
+                      <option key={charity.website} value={charity.name}>
+                        {charity.name}
+                      </option>
+                    );
                   })}
                 </select>{" "}
                 {errors.charities && (
@@ -205,21 +206,23 @@ const errorCallback = (error) => {
               {errors.handlingInstructions && (
                 <div className="text-danger">{errors.handlingInstructions}</div>
               )}
-              <div className="form-group">
-                <label>Expiration Date:(optional)</label>
+              <div className="donate-form-group">
+                <label className="donate_label">
+                  Expiration Date:(optional)
+                </label>
                 <input
                   type="date"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="expirationDate"
                   value={formData.expirationDate}
                   onChange={handleChange}
                 />
               </div>
-              <div className="form-group">
-                <label>Quantity:(KG)</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Quantity:(KG)</label>
                 <input
                   type="number"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="quantity"
                   value={formData.quantity}
                   onChange={handleChange}
@@ -230,11 +233,11 @@ const errorCallback = (error) => {
               )}
             </div>
             <div className="col-md-5">
-              <div className="form-group">
-                <label>Allergen Information:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Allergen Information:</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="allergenInfo"
                   value={formData.allergenInfo}
                   onChange={handleChange}
@@ -243,11 +246,11 @@ const errorCallback = (error) => {
               {errors.allergenInfo && (
                 <div className="text-danger">{errors.allergenInfo}</div>
               )}
-              <div className="form-group">
-                <label>Donor Name:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Donor Name:</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="donorName"
                   value={formData.donorName}
                   onChange={handleChange}
@@ -256,11 +259,11 @@ const errorCallback = (error) => {
               {errors.donorName && (
                 <div className="text-danger">{errors.donorName}</div>
               )}
-              <div className="form-group">
-                <label>Donor Email:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Donor Email:</label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="donorEmail"
                   value={formData.donorEmail}
                   onChange={handleChange}
@@ -269,11 +272,11 @@ const errorCallback = (error) => {
               {errors.donorEmail && (
                 <div className="text-danger">{errors.donorEmail}</div>
               )}
-              <div className="form-group">
-                <label>Donor Phone:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Donor Phone:</label>
                 <input
                   type="tel"
-                  className="form-control"
+                  className="form-control donate_input"
                   name="donorPhone"
                   value={formData.donorPhone}
                   onChange={handleChange}
@@ -282,10 +285,10 @@ const errorCallback = (error) => {
               {errors.donorEmail && (
                 <div className="text-danger">{errors.donorPhone}</div>
               )}
-              <div className="form-group">
-                <label>Pickup Details:</label>
+              <div className="donate-form-group">
+                <label className="donate_label">Pickup Details:</label>
                 <textarea
-                  className="form-control"
+                  className="form-control donate_input"
                   name="pickupDetails"
                   value={formData.pickupDetails}
                   onChange={handleChange}
@@ -297,9 +300,11 @@ const errorCallback = (error) => {
               )}
             </div>
           </div>
-          <button type="submit" className="btn btn-success">
-            Donate
-          </button>
+          <div className="container   text-center ">
+            <button type="submit " className="btn btn-success donate_submit  ">
+              Donate
+            </button>
+          </div>
         </form>
       </div>
     </div>

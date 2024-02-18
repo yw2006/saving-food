@@ -20,16 +20,16 @@ function Error() {
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-chevron-double-right"
+            className="bi bi-chevron-double-right"
             viewBox="0 0 16 16"
             color="white"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
             />
           </svg>
@@ -54,21 +54,21 @@ function Error() {
               Please use the search box to find what you are looking for.
               Perhaps searching can help.
             </p>
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <input
                 type="text"
-                class="form-control "
+                className="form-control "
                 placeholder="Search..."
                 aria-label=""
                 aria-describedby="basic-addon2"
               />
-              <button class="input-group-text" type="submit" id="basic-addon2">
+              <button className="input-group-text" type="submit" id="basic-addon2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-search"
+                  className="bi bi-search"
                   viewBox="0 0 16 16"
                 >
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />

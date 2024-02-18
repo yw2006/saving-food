@@ -37,9 +37,7 @@ font-weight: bolder;
     background-size: cover; /* Ensure the background image covers the entire container */
     height: 300px;
     margin-top: 20px !important;
-    background-color: rgba(0, 0, 0, 0.9);
-    
-
+    color: white;
 }
 
 .div_one_h1{

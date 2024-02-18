@@ -25,40 +25,33 @@ body, html {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-h2 {
+.donate_title{
   text-align: center;
   margin-bottom: 30px;
   color: #4caf50;
 }
 
-.form-group {
+.donate-form-group {
   margin-bottom: 20px;
 }
 
-label {
+.donate_label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea,
-input[type="date"],
-button {
+.donate_input{
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
-
-button {
-  background-color: #4caf50;
-  color: white;
-  cursor: pointer;
+.donate_submit{
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
 }
 
-button:hover {
-  background-color: #45a049;
-}
+
