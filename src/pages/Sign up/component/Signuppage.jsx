@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import '../style/signup.css'
+import "../style/signup.css";
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: '',
+    email: "",
     birthDate: "",
     password: "",
     confirmPassword: "",
+    role: 'user',
   });
 
   const [errors, setErrors] = useState({});
@@ -43,10 +44,10 @@ const SignUpForm = () => {
       errors.lastName = "Last name is required";
     }
     if (!formData.email) {
-        errors.email = 'Email is required';
-      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-        errors.email = 'Email is invalid';
-      }
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+    }
 
     if (!data.birthDate.trim()) {
       errors.birthDate = "Birthdate is required";
@@ -66,12 +67,15 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="container-fluid  align-items-center pagecontainer h-100 w-100 signuppagecontainer">
+    <div className="container-fluid  align-items-center pagecontainer w-100 signuppagecontainer">
       <div className="form-container p-5 text-white w-100">
         <h2 className="">JOIN OUR COMMUNITY</h2>
         <p className="text-white">
-            Already have an account? <Link to="/login" className="loginlink">Login</Link>
-          </p>
+          Already have an account?{" "}
+          <Link to="/login" className="loginlink">
+            Login
+          </Link>
+        </p>
         <form onSubmit={handleSubmit}>
           <div>
             <label className="mb-2">First Name:</label>
@@ -117,6 +121,14 @@ const SignUpForm = () => {
               className="date-input"
             />
             {errors.birthDate && <p>{errors.birthDate}</p>}
+          </div>
+          <div>
+            <label className="mt-2 mb-2">Choose Your Role:</label>
+            <br />
+            <select className="select" name="role" value={formData.role} onChange={handleChange}>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
           </div>
           <div>
             <label className="mt-2 mb-2">Password:</label>

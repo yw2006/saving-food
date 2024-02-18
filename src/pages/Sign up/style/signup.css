@@ -1,7 +1,10 @@
 @media only screen and (min-width: 768px) {
     .signuppagecontainer {
+      height: 110vh;
       background-image: url("https://i.ibb.co/r7gNwTB/signupbackground.jpg");
-      background-size: cover;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
     }
     .date-input{
       padding: 5px;
@@ -30,6 +33,13 @@
         color: #1ab056;
         text-decoration: none;
         font-weight: bold;
+    }
+    .select{
+      width: 25%;
+      background-color: rgba(120, 120, 120, 0.628);
+      border-radius: 8px;
+      opacity: 50%;
+      color: white;
     }
   }
 @media only screen and (max-width: 768px) {
