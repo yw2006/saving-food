@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../style/Banner.css";
 export default function Banner (){
     return <>
@@ -11,7 +12,7 @@ export default function Banner (){
       <h2 className="texting">for Another Day!</h2>
     </div>
     <div className="button text-center align-content-center mt-5">
-      <button className="btn btn-outline-dark rounded-pill pt-3 pb-3 ps-4 pe-4 baton">JOIN OUR TEAM</button>
+      <Link to="/signup" className="btn btn-outline-dark rounded-pill pt-3 pb-3 ps-4 pe-4 baton">JOIN OUR TEAM</Link>
     </div>
   </div>
   </div>
