@@ -32,11 +32,12 @@
 .donation-form {
   background-color: white;
   width: 410px !important;
-  height: 450px !important;
+  height: 430px !important;
   position: absolute;
   right: 100px;
   top: 70px;
-  border-radius: none;
+  border-radius: 20px;
+  border: none;
 }
 
 .donation-form h1 {
@@ -45,6 +46,8 @@
   margin-bottom: 20px;
   text-align: center !important;
   font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   padding: 10px;
   border-radius: none;

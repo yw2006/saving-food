@@ -92,7 +92,6 @@
   .board {
     margin: auto !important;
 
-
   }
 
 
@@ -112,7 +111,7 @@
   }
 
   .board {
-    margin: auto !important;
+    margin: auto;
 
 
   }

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import "../style/Banner.css";
 export default function Banner (){
     return <>
-<div className="container-fluid baner mb-3">
+<div className="container-fluid baner mb-5">
   <div className="background-overlay">
 
   <div className="d-inline-flex container p-4 banner">
 
-    <div className="text">
+    <div className="text bannertext">
       <h1>Don't Throw Away<br/><span>Recycle</span></h1>
       <h2 className="texting">for Another Day!</h2>
     </div>

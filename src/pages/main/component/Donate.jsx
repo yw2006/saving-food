@@ -20,9 +20,9 @@ function Donate() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mb-5">
       <div className="first  row">
-        <div className="donation-form ">
+        <div className="donation-form m-4">
           <h1 className="row">Make a Donation</h1>
           <p>
             Nostra dapibus varius et semper semper rutrum ad risus felis eros
@@ -53,7 +53,7 @@ function Donate() {
           <a href="#" className="btn d-btn" onClick={handleCustomBtnClick}>
             Custome
           </a>
-          <a href="#" className="btn b-btn">
+          <a href="#" className="btn b-btn ">
             Donate Now
           </a>
         </div>

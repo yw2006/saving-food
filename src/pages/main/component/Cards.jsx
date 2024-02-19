@@ -3,7 +3,7 @@ import "../style/Cards.css";
 function Cards() {
 
   return (
-    <div className="container " style={{ width: "1100px" }}>
+    <div className="container mb-5">
       <h6 style={{ color: "green", textAlign: "center", marginBottom: "20px", marginTop: "30px" }}>
         Start Donating Now{" "}
       </h6>
