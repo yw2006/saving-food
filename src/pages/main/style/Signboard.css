@@ -83,18 +83,18 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 600px) {
   .row1 {
     font-size: 20px !important;
-    width: 590px;
-  }
-
-  .board {
-    margin: auto !important;
-
   }
 
 
+  .sora{
+    height: 100%;
+    margin: auto;
+    width: 500px;
+
+  }
 
 
 
@@ -106,7 +106,7 @@
   }
 
   .sora {
-    width: 440px !important;
+    width: 100% !important;
 
   }
 

@@ -3,7 +3,7 @@ import "../style/Banner.css";
 export default function Banner (){
     return <>
 <div className="container-fluid baner mb-5">
-  <div className="background-overlay">
+  <div className="background-overlay h-100">
 
   <div className="d-inline-flex container p-4 banner">
 
