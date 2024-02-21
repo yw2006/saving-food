@@ -2,7 +2,6 @@ import React from "react";
 import "../style/Donate.css";
 import { Carousel } from "react-bootstrap";
 import { useState } from "react";
-
 function Donate() {
   const [donationAmount, setDonationAmount] = useState("");
 
@@ -21,63 +20,68 @@ function Donate() {
 
   return (
     <div className="container-fluid mb-5">
-      <div className="first  row">
-        <div className="donation-form m-4">
-          <h1 className="row">Make a Donation</h1>
-          <p>
-            Nostra dapibus varius et semper semper rutrum ad risus felis eros
-            majority have suffered alteration
-          </p>
-          <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
+      <div class="content-container">
+        <img src="https://media.istockphoto.com/id/844226534/photo/leaf-background.jpg?s=612x612&w=0&k=20&c=N4NPPNXFU5hPcThEbQ-wr4y64pqSKm-x5AMDZ0sPL5w=" alt="Background Image" class="background-image" />
 
-            <input
-              type="text" aria-label="Amount (to the nearest dollar)"
-              value={donationAmount}
-              onChange={(e) => setDonationAmount(e.target.value)}
-            />
+        <div className="first  row">
+          <div className="donation-form m-4">
+            <h1 className="row">Make a Donation</h1>
+            <p>
+              Nostra dapibus varius et semper semper rutrum ad risus felis eros
+              majority have suffered alteration
+            </p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+
+              <input
+                type="text" aria-label="Amount (to the nearest dollar)"
+                value={donationAmount}
+                onChange={(e) => setDonationAmount(e.target.value)}
+              />
+            </div>
+
+            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(50)}>
+              50
+            </a>
+            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(100)}>
+              100
+            </a>
+            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(200)}>
+              200
+            </a>
+            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(500)}>
+              500
+            </a>
+            <a href="#" className="btn d-btn" onClick={handleCustomBtnClick}>
+              Custome
+            </a>
+            <a href="#" className="btn b-btn ">
+              Donate Now
+            </a>
           </div>
+          <div className="sec ">
+            <h1 className="heading">
+              Let’s Together Protect and Enhance Environment for our Future
+              Generation
+            </h1>
 
-          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(50)}>
-            50
-          </a>
-          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(100)}>
-            100
-          </a>
-          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(200)}>
-            200
-          </a>
-          <a href="#" className="btn d-btn" onClick={() => handleBtnClick(500)}>
-            500
-          </a>
-          <a href="#" className="btn d-btn" onClick={handleCustomBtnClick}>
-            Custome
-          </a>
-          <a href="#" className="btn b-btn ">
-            Donate Now
-          </a>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-warning text-light  start-btn "
+            style={{
+              borderRadius: "100px",
+              marginLeft: "180px",
+              width: "160px",
+              marginTop: "10px",
+              height: "60px",
+            }}
+          >
+            Start Donating
+          </button>
+
         </div>
-        <div className="sec row">
-          <h1 className="heading ">
-            Let’s Together Protect and Enhance Environment for our Future
-            Generation
-          </h1>
-        </div>
-        <button
-          type="button"
-          class="btn btn-outline-warning text-light  start-btn "
-          style={{
-            borderRadius: "100px",
-            marginLeft: "180px",
-            width: "190px",
-            marginTop: "10px",
-            height: "60px",
-          }}
-        >
-          Start Donating
-        </button>
       </div>
-
       <div className="row slider">
         <Carousel
           interval={3000}

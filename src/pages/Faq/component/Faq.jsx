@@ -3,38 +3,45 @@ import Navbar from "../../../commn/Navabar";
 import Navabar2 from "../../../commn/navbar";
 import Footer from "../../../commn/Footer.jsx";
 import "../style/Faq.css";
+import secound from "../../../pages/main/component/pics/second.jpg";
+
 export default function Faq() {
   return (
     <div>
       <Navbar />
       <Navabar2 />
-      <div className=" div_one container-fluid d-flex flex-column justify-content-center align-items-center">
-        <div>
-          <h1 className="div_one_h1">FAQ</h1>
+      <div className="div_one container-fluid d-flex flex-column justify-content-center align-items-center" style={{ position: "relative" }}>
+        <div className="sec_img_err">
+          <img src={secound} alt="Background Image" style={{
+            position: "absolute", width: "100%", height: "320px"
+          }} />
         </div>
-        <div>
-          <a href="/" className="div_two_a">
-            Home
-          </a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-chevron-double-right"
-            viewBox="0 0 16 16"
-            color="white"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
-            />
-          </svg>
-          <span className="div_two_span"> FAQ </span>
+        <div style={{ position: "relative", color: "white", marginTop: "100px", textAlign: "center" }}>
+          <div>
+            <h1 className="div_one_h1">FAQ</h1>
+          </div>
+          <div>
+            <a href="/" className="div_two_a">Home</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-double-right"
+              viewBox="0 0 16 16"
+              color="white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+            <span className="div_two_span"> FAQ </span>
+          </div>
         </div>
       </div>
       <div className="container">
@@ -50,7 +57,7 @@ export default function Faq() {
                     data-bs-target="#collapseOne1"
                     aria-expanded="true"
                     aria-controls="collapseOne1"
-                    
+
                   >
                     Where do I find my Office product key?
                   </button>
@@ -59,7 +66,7 @@ export default function Faq() {
                   id="collapseOne1"
                   class="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample1"
-                  aria-labelledby="headingOne" 
+                  aria-labelledby="headingOne"
                 >
                   <div class="accordion-body">
                     Anim pariatur cliche a reprehenderit, enim the eiusmod high
@@ -181,11 +188,11 @@ export default function Faq() {
           </div>
 
           <div className="col">
-          <div class="accordion" style={{ border: "none", backgroundColor:"white" }} id="accordionExample2">
+            <div class="accordion" style={{ border: "none", backgroundColor: "white" }} id="accordionExample2">
               <div class="accordion-item"  >
                 <h2 class="accordion-header" >
                   <button
-                
+
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
@@ -236,9 +243,9 @@ export default function Faq() {
                   </div>
                 </div>
               </div>
-              
 
-              
+
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -321,9 +328,9 @@ export default function Faq() {
                   </div>
                 </div>
               </div>
-              
-              
-              
+
+
+
             </div>
           </div>
         </div>

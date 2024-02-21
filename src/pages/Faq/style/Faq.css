@@ -1,22 +1,33 @@
-.accordin_div{
-    margin-top: 100px !important;
+.accordin_div {
+    margin-top: 200px !important;
     margin-bottom: 100px !important;
 }
 
-.the_first_col{
+.the_first_col {
     background-color: white;
     border: none !important;
     margin-bottom: 80px !important;
 
 }
 
-.accordion-button{
-font-size:18px !important;
-font-weight: 700;
+.sec_img_err {
+    filter: brightness(10%) !important;
+
+    width: 100% !important;
+}
+
+.accordion-button {
+    font-size: 18px !important;
+    font-weight: 700;
 
 
 }
 
+.div_one {
+    /* Ensure the background image covers the entire container */
+    height: 300px;
+    color: white;
+    width: 80px;
 
 
-
+}

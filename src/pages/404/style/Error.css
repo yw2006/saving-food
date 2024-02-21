@@ -1,15 +1,22 @@
-.text404{
-color: #348f7a;
-font-size: 150px;
-font-family:"Rubik", sans-serif;
-font-weight: bolder;
+.text404 {
+    color: #348f7a;
+    font-size: 150px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bolder;
 }
 
-.notf{
+.sec_img_err {
+    filter: brightness(10%) !important;
+
+    width: 100% !important;
+}
+
+.notf {
     font-weight: bolder;
 
 }
-.back{
+
+.back {
     text-decoration: none;
     background-color: #348f7a !important;
     color: white !important;
@@ -18,54 +25,60 @@ font-weight: bolder;
     width: 190px;
     font-size: large !important;
 }
-.para{
+
+.para {
     color: rgb(109, 109, 109);
 }
-.col-2-text{
+
+.col-2-text {
     font-size: 20px;
 
 }
-.input-group{
+
+.input-group {
     width: 390px !important;
     height: 70px;
-  
+
     border-color: chocolate !important;
 }
-.div_one{
-    background-image: url(../../main/component/pics/second.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; /* Ensure the background image covers the entire container */
+
+.div_one {
+    /* Ensure the background image covers the entire container */
     height: 300px;
-    margin-top: 20px !important;
     color: white;
-}
+    width: 80px;
 
-.div_one_h1{
-color: white;
-font-size: 60px ;
-font-family:"Rubik", sans-serif;
-font-weight: bolder;
-margin-right: 50px !important;
 
 }
-.div_two_a{
+
+.div_one_h1 {
+    color: white;
+    font-size: 60px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bolder;
+    margin-right: 50px !important;
+
+}
+
+.div_two_a {
     color: rgb(225, 139, 1);
     margin-right: 10px !important;
     text-decoration: none;
-    
-    
+
+
 }
 
-.div_two_span{
+.div_two_span {
     margin-left: 10px !important;
     color: white;
 
 
 }
-.cont_tow{
+
+.cont_tow {
     margin-bottom: 60px !important;
-    margin-top: 100px !important;
-    
+    margin-top: 200px !important;
+
 
 }
 
@@ -73,13 +86,8 @@ margin-right: 50px !important;
 .input-group input.form-control:focus {
     border-color: green !important;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
-  }
+}
 
-  .input-group input.form-control {
+.input-group input.form-control {
     border-color: orange !important;
-  }
-
-  
-  
-
-  
+}
