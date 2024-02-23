@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/Donate.css";
 import { Carousel } from "react-bootstrap";
+import leavs from "./pics/leaves.jpg"
 import { useState } from "react";
 function Donate() {
   const [donationAmount, setDonationAmount] = useState("");
@@ -21,7 +22,7 @@ function Donate() {
   return (
     <div className="container-fluid mb-5">
       <div class="content-container">
-        <img src="https://media.istockphoto.com/id/844226534/photo/leaf-background.jpg?s=612x612&w=0&k=20&c=N4NPPNXFU5hPcThEbQ-wr4y64pqSKm-x5AMDZ0sPL5w=" alt="Background Image" class="background-image" />
+        <img src={leavs} alt="Background Image" class="background-image" />
 
         <div className="first  row">
           <div className="donation-form m-4">

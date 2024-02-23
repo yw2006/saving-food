@@ -264,6 +264,7 @@
   }
 
 
+
   .sec h1 {
     font-size: 25px !important;
   }
@@ -322,9 +323,9 @@
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 645px) {
   .content-container {
-    height: 800px;
+    height: 830px;
   }
 
   .sec {
