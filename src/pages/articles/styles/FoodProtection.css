@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fp-header {
+    background: #f0c239;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.fp-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto; /* Adjusted for spacing */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80%; /* Adjusted for width */
+}
+
+.fp-heading {
+    color: #333;
+}
+
+.fp-paragraph {
+    color: #333;
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fr-header {
+    background: #f0c239;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.fr-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fr-heading, .fr-subheading {
+    color: #333;
+}
+
+.fr-paragraph {
+    color: #333;
+}
