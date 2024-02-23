@@ -19,6 +19,27 @@ export default function Landing() {
               alt="First Slide"
             />
             <div className="caption d-none d-md-block text-center d-flex">
+            <h5 class="text-white car-text">welcome to saving food</h5>
+                <h1 class="text-white car-text2">Together we can <br/> Make a <span class="fw-bold">Deffrence.</span></h1>
+                <button class="btn-53">
+                    <div class="original">Discover more</div>
+                    <div class="letters">
+                      
+                      <span>D</span>
+                      <span>i</span>
+                      <span>s</span>
+                      <span>c</span>
+                      <span>O</span>
+                      <span>v</span>
+                      <span>e</span>
+                      <span>r </span>
+                      
+                      <span>M</span>
+                      <span>o</span>
+                      <span>r</span>
+                      <span>e</span>
+                    </div>
+                  </button>
             </div>
           </div>
           <div className="carousel-item">
@@ -28,7 +49,27 @@ export default function Landing() {
               alt="Second Slide"
             />
             <div className="caption d-none d-md-block text-center d-flex">
-              {/* Your caption content */}
+            <h5 class="text-white car-text">welcome to saving food</h5>
+                <h1 class="text-white car-text2">Together we can <br/> Make a <span class="fw-bold">Deffrence.</span></h1>
+                <button class="btn-53">
+                    <div class="original">Discover more</div>
+                    <div class="letters">
+                      
+                      <span>D</span>
+                      <span>i</span>
+                      <span>s</span>
+                      <span>c</span>
+                      <span>O</span>
+                      <span>v</span>
+                      <span>e</span>
+                      <span>r </span>
+                      
+                      <span>M</span>
+                      <span>o</span>
+                      <span>r</span>
+                      <span>e</span>
+                    </div>
+                  </button>
             </div>
           </div>
         </div>
