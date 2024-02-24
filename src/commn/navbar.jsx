@@ -2,9 +2,9 @@ import React from "react";
 import "./style/navbar.css"
 export default function Navbar(){
     return <>
-    
-    <div className="container">
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="bg-white nabvar2">
+    <div className="container bg-white">
+  <nav className="navbar navbar-expand-lg bg-white">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">
         Saving dood
@@ -23,7 +23,7 @@ export default function Navbar(){
       <div className="collapse navbar-collapse text-center" id="navbarScroll">
         <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll list">
           <li className="nav-item dropdown">
-            <a className="nav-link " href="#">
+            <a className=" home-button nav-link " href="#">
               home
             </a>
           </li>
@@ -183,14 +183,15 @@ export default function Navbar(){
             </ul>
           </li>
         </ul>
-        <form className="d-flex" role="search">
-          <button className="btn btn-outline-success" type="submit">
-            contact us
+        <form className="d-flex cont-btn" role="search">
+          <button className="contact-button" type="submit">
+          <span>Contact Us</span>
           </button>
         </form>
       </div>
     </div>
   </nav>
 </div>
+</div>  
     </>
 }
