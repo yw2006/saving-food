@@ -13,6 +13,7 @@ import FoodDonationForm from "./pages/donationForm/componets/form";
 import Faq from "./pages/Faq/component/Faq";
 import Error from "./pages/404/component/Error";
 import UserDash from "./pages/UserDashboard/UserDash";
+import VolunteringDetails from "./pages/main/component/VolunteringDetails";
 const App = () => {
   return (
     <Routes>
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/donation" element={<FoodDonationForm />} />
       <Route path="/faq" element={<Faq />} />
+      <Route path="/VolunteringDetails" Component={VolunteringDetails} />
       <Route path="*" element={<Error />} />
       <Route path="/userdashboard" element={<UserDash />} />
     </Routes>
