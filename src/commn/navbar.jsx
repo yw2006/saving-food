@@ -61,9 +61,9 @@ export default function Navbar() {
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link to={"/contactus"} className="dropdown-item" href="#">
                         contact us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

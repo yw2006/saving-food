@@ -1,0 +1,95 @@
+.container_contuct{
+    background-color: rgba(220, 232, 247, 0.507);
+    .sec_container{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px;
+        .p_first_block{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .right_section{
+            margin-bottom: 20px;
+            width: 250px;
+            .block{
+                div{
+                    display: flex;
+                    img {
+                            width: 30px;
+                            height: 30px;
+                            object-fit: cover;
+                            margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .left_section{
+            margin-left: 200px;
+            p{
+                font-size: 50px;
+                font-weight: 700;
+                font-family: sans-serif;
+            }
+            form{
+                margin-top: 20px;
+                .group {
+                    .pair{
+                        margin-bottom: 15px;
+                        display: flex;
+                        div{
+                            display: flex;
+                            input {
+                                    width: 350px;
+                                    padding: 25px;
+                                    border-radius: 7px;
+                                    border: none;
+                                    outline: none;
+                                    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.219); */
+                                }
+                            
+                                input:focus {
+                                    border: 1px solid rgb(31, 211, 15);
+                                }
+                                .error-message{
+                                    font-size: 18px;
+                                    color: red;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                }
+                        }
+                    }
+                }
+                .areaText{
+                    textarea{
+                            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.219); */
+                        border: none;
+                            outline: none;
+                        width: 100%;
+                        padding: 10px;
+                    }
+                }
+                                .btn_submision_dev {
+                                    margin-top: 20px;
+                
+                                    .btn_submision_class {
+                                        background-color: rgb(18, 105, 54);
+                                        padding: 20px 40px;
+                                        text-align: center;
+                                        border: none;
+                                        outline: none;
+                                        color: white;
+                                        margin-bottom: 20px;
+                                        transition: all .1s ease-out;
+                                    }
+                
+                                    .btn_submision_class:hover {
+                                        background-color: orange;
+                                        cursor: pointer;
+                                    }
+                                }
+            }
+        }
+    }
+}
