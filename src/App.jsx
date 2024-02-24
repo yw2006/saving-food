@@ -15,6 +15,10 @@ import Error from "./pages/404/component/Error";
 import UserDash from "./pages/UserDashboard/UserDash";
 import VolunteringDetails from "./pages/main/component/VolunteringDetails";
 import ContactUs from "./pages/main/component/ContactUs";
+import FoodDonation from "./pages/articles/FoodDonation";
+import FoodProtection from "./pages/articles/FoodProtection";
+import FoodRecycling from "./pages/articles/FoodRecycling";
+import adminDashboard from "./adminDashboard/index";
 const App = () => {
   return (
     <Routes>
@@ -27,6 +31,10 @@ const App = () => {
       <Route path="/contactus" Component={ContactUs} />
       <Route path="*" element={<Error />} />
       <Route path="/userdashboard" element={<UserDash />} />
+      <Route path="/chiratiesdachboard" Component={adminDashboard} />
+      <Route path="/art1" element={<FoodDonation />} />
+      <Route path="/art2" element={<FoodProtection />} />
+      <Route path="/art3" element={<FoodRecycling />} />
     </Routes>
   );
 };

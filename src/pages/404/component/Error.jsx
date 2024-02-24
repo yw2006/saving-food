@@ -6,8 +6,6 @@ import "../style/Error.css";
 function Error() {
   return (
     <div>
-      <Navbar />
-      <Navabar2 />
       <div className="div_one container-fluid d-flex flex-column justify-content-center align-items-center" style={{ position: "relative" }}>
         <div className="sec_img_err">
           <img src={secound} alt="Background Image" style={{
@@ -85,8 +83,6 @@ function Error() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div >
   );
 }

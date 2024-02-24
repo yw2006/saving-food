@@ -6,7 +6,6 @@ import Footer from "../../../commn/Footer";
 function UserDashboard() {
   return (
         <div>
-            <Navbar/>
       <section className="ftco-section">
       <div className="container">
         <div className="row justify-content-center">
@@ -55,7 +54,6 @@ function UserDashboard() {
         </div>
       </div>
     </section>
-    <Footer/>
     </div>
   );
 }

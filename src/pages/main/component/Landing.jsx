@@ -19,11 +19,11 @@ export default function Landing() {
               alt="First Slide"
             />
             <div className="caption d-none d-md-block text-center d-flex">
-            <h5 class="text-white car-text">welcome to saving food</h5>
-                <h1 class="text-white car-text2">Together we can <br/> Make a <span class="fw-bold">Deffrence.</span></h1>
-                <button class="btn-53">
-                    <div class="original">Discover more</div>
-                    <div class="letters">
+            <h5 className="text-white car-text">welcome to saving food</h5>
+                <h1 className="text-white car-text2">Together we can <br/> Make a <span class="fw-bold">Deffrence.</span></h1>
+                <button className="btn-53">
+                    <div className="original">Discover more</div>
+                    <div className="letters">
                       
                       <span>D</span>
                       <span>i</span>

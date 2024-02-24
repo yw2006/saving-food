@@ -8,8 +8,6 @@ import secound from "../../../pages/main/component/pics/second.jpg";
 export default function Faq() {
   return (
     <div>
-      <Navbar />
-      <Navabar2 />
       <div className="div_one container-fluid d-flex flex-column justify-content-center align-items-center" style={{ position: "relative" }}>
         <div className="sec_img_err">
           <img src={secound} alt="Background Image" style={{
@@ -335,7 +333,6 @@ export default function Faq() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
