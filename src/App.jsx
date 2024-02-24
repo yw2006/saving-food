@@ -10,8 +10,9 @@ import Main from "./pages/main/index";
 import SignUp from "./pages/Sign up/Signup";
 import Login from "./pages/Login/Login";
 import FoodDonationForm from "./pages/donationForm/componets/form";
-import Faq from "./pages/Faq/component/Faq"
-import Error from './pages/404/component/Error'
+import Faq from "./pages/Faq/component/Faq";
+import Error from "./pages/404/component/Error";
+import UserDash from "./pages/UserDashboard/UserDash";
 const App = () => {
   return (
     <Routes>
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/donation" element={<FoodDonationForm />} />
       <Route path="/faq" element={<Faq />} />
       <Route path="*" element={<Error />} />
+      <Route path="/userdashboard" element={<UserDash />} />
     </Routes>
   );
 };
