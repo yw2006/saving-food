@@ -35,8 +35,8 @@ function Cards() {
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Donation </h5>
               <p class="card-text">
-                Nostra dapibus varius et semper semper rutrum ad risus felis
-                eros
+                Food donation is the process of giving unused or surplus food to people in need. The donation aims to reduce food waste and address hunger needs in the community. Food can be donated through charities, social restaurants and food banks.
+
               </p>
               <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}
@@ -80,8 +80,8 @@ function Cards() {
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Recycling </h5>
               <p class="card-text">
-                Nostra dapibus varius et semper semper rutrum ad risus felis
-                eros
+                Donate food to those in need, compost rotting fruits and vegetables, use proper drying and storage techniques, set up social catering. These measures contribute to reducing food waste, improving food sustainability, and meeting the food needs of the community.
+
               </p>
               <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}
@@ -125,8 +125,8 @@ function Cards() {
               </div>
               <h5 class="card-title" style={{ marginTop: "15px" }}>Food Protection</h5>
               <p class="card-text">
-                Nostra dapibus varius et semper semper rutrum ad risus felis
-                eros
+                Store it at an appropriate temperature. Separate fresh from half-cooked foods. Use airtight containers and store them in the refrigerator. Freeze freezable food. Avoid exposure to outside air for long periods. Use clean tools to handle food....
+
               </p>
               <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
                 {" "}

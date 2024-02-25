@@ -4,7 +4,7 @@ import { Carousel } from "react-bootstrap";
 import leavs from "./pics/leaves.jpg"
 import { useState } from "react";
 
-function Donate(props) {
+function Donate() {
   const [donationAmount, setDonationAmount] = useState("");
 
   const handleBtnClick = (amount) => {
