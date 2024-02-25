@@ -2,6 +2,90 @@
     margin: 0;
     padding: 0;
 }
+.nabvar{
+  padding: 1vh;
+}
+.vertical-line{
+      border-left: 0.1px solid rgb(226, 224, 224);
+
+}
+.svgs{
+  margin-left: 30%;
+  padding-top: 0.2%;
+}
+
+.h-line{
+  border-bottom: 0.1px solid rgb(226, 224, 224);
+}
+.nabvar2{
+  padding: 1vh;
+}
+.home-button{
+
+  color: #f0c239;
+}
+.cont-btn{
+  margin-right: 10%;
+}
+.contact-button {
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #f79423;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: rgb(78, 78, 78);
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.contact-button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.contact-button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover span {
+  color: #ffffff;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -11,5 +95,5 @@
       pointer-events: none;
   }
 .list{
-    margin-left: 25%;
+    margin-left: 28%;
 }

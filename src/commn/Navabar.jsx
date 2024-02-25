@@ -2,7 +2,8 @@ import React from "react";
 import "./style/navbar.css"
 export default function Navabar(){
     return <>
-    <div className="container">
+    <div className="bg-white">
+    <div className="container nabvar">
   <div className="">
     <div className="">
       <nav className="nav flex-column flex-sm-row text-center">
@@ -22,6 +23,7 @@ export default function Navabar(){
           </span>{" "}
           +201121475666
         </a>
+        <div className="vertical-line"></div>
         <a className="nav-link text-secondary" href="">
           <span className="text-black">
             {" "}
@@ -39,6 +41,7 @@ export default function Navabar(){
           </span>{" "}
           example@gmail.com
         </a>
+        <div className="vertical-line"></div>
         <a className="nav-link text-secondary" href="">
           <span>
             <svg
@@ -54,7 +57,7 @@ export default function Navabar(){
             <span className="text-black">visit</span> street 9{" "}
           </span>
         </a>
-        <div className="justify-content-end">
+        <div className="justify-content-end svgs">
           <button className="btn rounded">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +100,8 @@ export default function Navabar(){
   </div>
 </div>
 
-    
+    <div className="h-line">
+    </div>
+</div>
     </>
 }
