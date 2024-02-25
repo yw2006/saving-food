@@ -44,7 +44,6 @@
   color: white !important;
   height: 40px !important;
   width: 50px !important;
-  border-top-left-radius: 20px !important;
 
 }
 
@@ -65,7 +64,6 @@
   position: absolute;
   right: 100px;
   top: 70px;
-  border-radius: 20px;
   border: none;
 }
 
@@ -75,8 +73,6 @@
   margin-bottom: 20px;
   text-align: center !important;
   font-size: 30px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 
   padding: 10px;
   border-radius: none;
@@ -85,7 +81,6 @@
 .donation-form .d-btn {
   background-color: rgb(233, 233, 233);
   border-radius: 40px !important;
-
   width: 85px !important;
   margin-right: 10px;
   margin-bottom: 25px;

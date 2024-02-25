@@ -3,7 +3,8 @@ import "../style/Donate.css";
 import { Carousel } from "react-bootstrap";
 import leavs from "./pics/leaves.jpg"
 import { useState } from "react";
-function Donate() {
+
+function Donate(props) {
   const [donationAmount, setDonationAmount] = useState("");
 
   const handleBtnClick = (amount) => {
@@ -41,22 +42,22 @@ function Donate() {
               />
             </div>
 
-            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(50)}>
+            <a href="#" className="btn d-btn" onClick={(e) => { e.preventDefault(); handleBtnClick(50); }}>
               50
             </a>
-            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(100)}>
+            <a href="#" className="btn d-btn" onClick={(e) => { e.preventDefault(); handleBtnClick(100); }}>
               100
             </a>
-            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(200)}>
+            <a href="#" className="btn d-btn" onClick={(e) => { e.preventDefault(); handleBtnClick(200); }}>
               200
             </a>
-            <a href="#" className="btn d-btn" onClick={() => handleBtnClick(500)}>
+            <a href="#" className="btn d-btn" onClick={(e) => { e.preventDefault(); handleBtnClick(500); }}>
               500
             </a>
-            <a href="#" className="btn d-btn" onClick={handleCustomBtnClick}>
+            <a href="#" className="btn d-btn" onClick={(e) => { e.preventDefault(); handleCustomBtnClick(); }}>
               Custome
             </a>
-            <a href="#" className="btn b-btn ">
+            <a href={`/donation/${donationAmount}`} className="btn b-btn ">
               Donate Now
             </a>
           </div>
@@ -77,6 +78,7 @@ function Donate() {
               marginTop: "10px",
               height: "60px",
             }}
+
           >
             Start Donating
           </button>
@@ -150,7 +152,7 @@ function Donate() {
           </Carousel.Item>
         </Carousel>
       </div>
-    </div>
+    </div >
   );
 }
 
