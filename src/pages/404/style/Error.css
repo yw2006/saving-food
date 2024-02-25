@@ -42,8 +42,8 @@
     border-color: chocolate !important;
 }
 
+/* Ensure the background image covers the entire container */
 .div_one {
-    /* Ensure the background image covers the entire container */
     height: 300px;
     color: white;
     width: 80px;
