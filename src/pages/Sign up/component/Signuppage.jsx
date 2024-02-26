@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../style/signup.css";
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ const SignUpForm = () => {
     confirmPassword: "",
     role: 'user',
   });
-
+  const navigation = useNavigate();
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -22,24 +22,14 @@ const SignUpForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = validateForm(formData);
-    if (Object.keys(newErrors).length === 0) {
-      // Form submission logic can go here
-      console.log("Form submitted successfully");
-    } else {
-      setErrors(newErrors);
-    }
-  };
-
+  
   const validateForm = (data) => {
     let errors = {};
 
     if (!data.firstName.trim()) {
       errors.firstName = "First name is required";
     }
-
+    
     if (!data.lastName.trim()) {
       errors.lastName = "Last name is required";
     }
@@ -48,26 +38,42 @@ const SignUpForm = () => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errors.email = "Email is invalid";
     }
-
+    
     if (!data.birthDate.trim()) {
       errors.birthDate = "Birthdate is required";
     }
-
+    
     if (!data.password.trim()) {
       errors.password = "Password is required";
     } else if (data.password.length < 6) {
       errors.password = "Password must be at least 6 characters";
     }
-
+    
     if (data.password !== data.confirmPassword) {
       errors.confirmPassword = "Passwords do not match";
     }
-
+    
     return errors;
   };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = validateForm(formData);
+    if (Object.keys(newErrors).length === 0) {
+      // Form submission logic can go here
+      console.log("Form submitted successfully");
+      if(formData.role=="user"){
+        navigation("/userdashboard");
+      }
+      else{
+        navigation("/chiratiesdachboard");
+      }
+    } else {
+      setErrors(newErrors);
+    }
+  };
+  
   return (
-    <div className="container-fluid  align-items-center pagecontainer w-100 signuppagecontainer">
+    <div className="container-fluid h-auto align-items-center pagecontainer w-100 signuppagecontainer">
       <div className="form-container p-5 text-white w-100">
         <h2 className="">JOIN OUR COMMUNITY</h2>
         <p className="text-white">

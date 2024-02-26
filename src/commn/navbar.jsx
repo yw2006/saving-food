@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       <div className="bg-white nabvar2">
-        <div className="container bg-white">
+        <div className="container bg-white ">
           <nav className="navbar navbar-expand-lg bg-white">
             <div className="container-fluid">
               <a className="navbar-brand" href="/">
@@ -26,7 +26,7 @@ export default function Navbar() {
                 className="collapse navbar-collapse text-center"
                 id="navbarScroll"
               >
-                <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll list">
+                <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll list ">
                   <li className="nav-item dropdown">
                     <Link className=" home-button nav-link " to="/">
                       home
@@ -53,6 +53,11 @@ export default function Navbar() {
                       to="/VolunteringDetails"
                     >
                       volunter{" "}
+                    </Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <Link className=" home-button nav-link " to="/signup">
+                      Join our community
                     </Link>
                   </li>
 

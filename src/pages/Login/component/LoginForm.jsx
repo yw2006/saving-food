@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import '../style/login.css'
+import { accounts } from "../../../stup/context/accounts";
 function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
+  const Navigation = useNavigate();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -22,9 +24,10 @@ function SignUpForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    let number = 0;
+    
     let errors = {};
-
+    
     // Email validation
     if (!email) {
       errors.email = "Email is required";
@@ -36,11 +39,23 @@ function SignUpForm() {
     if (!password) {
       errors.password = "Password is required";
     }
-
+    
     setErrors(errors);
-
+    
     if (Object.keys(errors).length === 0) {
       // Submit the form data here
+      for (let index = 0; index < accounts.length; index++) {
+          if (email == accounts[index].email) {
+            if (password == accounts[index].password) {
+              if(accounts[index].role=="admin"){
+                  Navigation("/chiratiesdachboard");
+              }
+              else if(accounts[index].role=="user"){
+                Navigation("/userdashboard");
+              }
+            }
+          }
+        }
       console.log("Form submitted successfully!");
     }
   };
@@ -87,7 +102,7 @@ function SignUpForm() {
             )}
           </div>
           <button type="submit" className="submitbutton mt-4">
-            Create account
+            Login
           </button>
         </form>
       </div>
