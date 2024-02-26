@@ -1,14 +1,15 @@
 import React from 'react';
 import "./style/Footer.css";
-// import { flowers } from "../pages/main/component/pics/bg08-150x150.jpg";
+import imgFooter from "../../src/pages/main/component/pics/bg08-150x150.jpg";
+
 function Footer() {
     return (
         <div className='backGroundFooter'>
             <div className='container'>
                 <div className='row'>
                     <div className='gridSystem categories'>
-                        <div className='first_dev_tool staticWidth'>
-                            <p className='title_category'>About</p>
+                        <div className='first_dev_tool staticWidth' style={{ marginTop: "-37px", fontWeight: "600" }}>
+                            <p className='title_category' style={{ fontSize: "28px" }}>About</p>
                             <p>Lorem ipsum dolor sllo, xercitationem,loribus saepe?</p>
                             <hr />
                             <p><i className='fa fa-calls'></i>6666 000 8888</p>
@@ -17,9 +18,9 @@ function Footer() {
                         </div>
 
                         <div className='second_dev_tool staticWidth'>
-                            <p className='title_category'>Latest News</p>
+                            <p className='title_category' style={{ fontSize: "25px", fontWeight: "600" }}>Latest News</p>
                             <div className='iconCardInfo'>
-                                <img href={"flowers"} alt="Can't Find" />
+                                <img href={imgFooter} alt="Can't Find" />
                                 <div className='text_content'>
                                     <p>
                                         January 12, 2022</p>
@@ -27,7 +28,7 @@ function Footer() {
                                 </div>
                             </div>
                             <div className='iconCardInfo'>
-                                <img href={'flowers'} alt="Can't Find" />
+                                <img href={imgFooter} alt="Can't Find" />
                                 <div className='text_content'>
                                     <p>
                                         January 12, 2022</p>
@@ -37,11 +38,11 @@ function Footer() {
                         </div>
 
                         <div className='third_dev_tool staticWidth'>
-                            <p className='title_category'>NewsLetter</p>
+                            <p className='title_category' style={{ fontSize: "25px", fontWeight: "600", marginTop: "-35px" }}>NewsLetter</p>
                             <p>Lorem ipsum dolor sllo,xercitationem,loribus saepe?</p>
                             <form method='post' action='' datatype='text'>
-                                <input type='text' placeholder='your adderss' />
-                                <input type='submit' value={"Subscribe"} />
+                                <input type='text' placeholder='your adderss' id='adderess_input' />
+                                <button type='submit' className='btn_submission'>Subscripe</button>
                             </form>
                         </div>
 
