@@ -21,7 +21,7 @@ export default function Navabar(){
             </svg>{" "}
             Phone
           </span>{" "}
-          +201121475666
+          +20124652684615
         </a>
         <div className="vertical-line"></div>
         <a className="nav-link text-secondary" href="">
