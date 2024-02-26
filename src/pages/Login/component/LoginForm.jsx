@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import '../style/login.css'
 function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-
+const Navigate=useNavigate();
   const handleChange = (event) => {
     const { name, value } = event.target;
     switch (name) {
@@ -22,7 +22,6 @@ function SignUpForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     let errors = {};
 
     // Email validation
