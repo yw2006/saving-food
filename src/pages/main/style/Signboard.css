@@ -70,6 +70,7 @@
 .text-block {
   position: absolute;
   bottom: 0px;
+  left: 27px;
   background-color: rgb(28, 28, 28);
   color: white;
   padding-left: 20px;
@@ -89,14 +90,14 @@
   }
 
 
-  .sora{
+  .sora {
     height: 100%;
     margin: auto;
     width: 500px;
 
   }
 
-
+ 
 
 }
 
@@ -130,6 +131,8 @@
     font-size: 15px !important;
 
   }
+
+
 
 
 

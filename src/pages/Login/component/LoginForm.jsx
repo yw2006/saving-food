@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import '../style/login.css'
+import "../style/login.css";
+import { accounts } from "../../../stup/context/accounts";
 function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-const Navigate=useNavigate();
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     switch (name) {
@@ -22,6 +23,7 @@ const Navigate=useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     let errors = {};
 
     // Email validation
@@ -40,6 +42,17 @@ const Navigate=useNavigate();
 
     if (Object.keys(errors).length === 0) {
       // Submit the form data here
+      for (let index = 0; index < accounts.length; index++) {
+        if (email == accounts[index].email) {
+          if (password == accounts[index].password) {
+            if (accounts[index].role == "admin") {
+              Navigation("/chiratiesdachboard");
+            } else if (accounts[index].role == "user") {
+              Navigation("/userdashboard");
+            }
+          }
+        }
+      }
       console.log("Form submitted successfully!");
     }
   };
@@ -86,7 +99,7 @@ const Navigate=useNavigate();
             )}
           </div>
           <button type="submit" className="submitbutton mt-4">
-            Create account
+            Login
           </button>
         </form>
       </div>
