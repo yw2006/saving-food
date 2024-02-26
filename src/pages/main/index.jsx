@@ -18,7 +18,6 @@ const Main = () => (
     <Feedbacks />
     <Volanteers />
     <Support />
-    <SwipperCardsDonationLanding />
   </>
 );
 export default Main;

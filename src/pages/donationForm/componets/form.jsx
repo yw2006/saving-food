@@ -1,20 +1,23 @@
 import { useState } from "react";
 import "../styles/FoodDonationForm.css"; // Import your custom CSS file
+import { useLocation } from "react-router-dom";
 
 function FoodDonationForm() {
-  const [formData, setFormData] = useState({
-    foodItems: "",
-    expirationDate: "",
-    packagingCondition: "",
-    allergenInfo: "",
-    quantity: "",
-    donorName: "",
-    donorEmail: "",
-    donorPhone: "",
-    adrress: "",
-    charities: "",
-    pickupDetails: "",
-  });
+     const location = useLocation();
+     const { donationAmount } = location.state?location.state:"";
+       const [formData, setFormData] = useState({
+         foodItems: "",
+         expirationDate: "",
+         packagingCondition: "",
+         allergenInfo: "",
+         quantity: donationAmount && donationAmount,
+         donorName: "",
+         donorEmail: "",
+         donorPhone: "",
+         adrress: "",
+         charities: "",
+         pickupDetails: "",
+       });
   const [charities, setcharities] = useState([
     {
       id: 1,

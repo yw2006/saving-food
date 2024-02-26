@@ -6,7 +6,8 @@ function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-
+  const [error,seterror]=useState();
+const Navigation=useNavigate()
   const handleChange = (event) => {
     const { name, value } = event.target;
     switch (name) {
@@ -50,7 +51,11 @@ function SignUpForm() {
             } else if (accounts[index].role == "user") {
               Navigation("/userdashboard");
             }
+          } else {
+            seterror("user not found");
           }
+        } else {
+          seterror("user not found");
         }
       }
       console.log("Form submitted successfully!");
@@ -60,6 +65,7 @@ function SignUpForm() {
   return (
     <div className="container-fluid d-flex align-items-center pagecontainer h-100 w-100 loginpagecontainer">
       <div className="form-container p-5 w-100">
+      <p className="text-danger">{error?error:""}</p>
         <form onSubmit={handleSubmit} className="col-sm-12">
           <h2 className="text-white col-sm-12">LOGIN</h2>
           <p className="text-white">

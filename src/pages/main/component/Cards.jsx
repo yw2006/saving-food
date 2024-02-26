@@ -4,10 +4,19 @@ function Cards() {
 
   return (
     <div className="container mb-5">
-      <h6 style={{ color: "green", textAlign: "center", marginBottom: "20px", marginTop: "30px" }}>
+      <h6
+        style={{
+          color: "green",
+          textAlign: "center",
+          marginBottom: "20px",
+          marginTop: "30px",
+        }}
+      >
         Start Donating Now{" "}
       </h6>
-      <h1 style={{ textAlign: "center" }} className="tittle">Our Services</h1>
+      <h1 style={{ textAlign: "center" }} className="tittle">
+        Our Services
+      </h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card food-card" style={{ textAlign: "center" }}>
@@ -17,9 +26,8 @@ function Cards() {
               alt="..."
             />
 
-
-            <div class="card-body" >
-              <h6 className="donation-nums" >
+            <div class="card-body">
+              <h6 className="donation-nums">
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
               </h6>
@@ -31,14 +39,26 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
+                <div
+                  class="progress-bar"
+                  style={{ width: "25%", backgroundColor: "orange" }}
+                ></div>
               </div>
-              <h5 class="card-title" style={{ marginTop: "15px" }}>Food Donation </h5>
+              <h5 class="card-title" style={{ marginTop: "15px" }}>
+                Food Donation{" "}
+              </h5>
               <p class="card-text">
-                Food donation is the process of giving unused or surplus food to people in need. The donation aims to reduce food waste and address hunger needs in the community. Food can be donated through charities, social restaurants and food banks.
-
+                {"Food donation is the process of giving unused or surplus food to people in need. The donation aims to reduce food waste and address hunger needs in the community. Food can be donated through charities, social restaurants and food banks.".slice(
+                  0,
+                  99
+                )}
+                .....
               </p>
-              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
+              <a
+                href="#"
+                className="icon-link"
+                style={{ textDecoration: "none" }}
+              >
                 {" "}
                 <svg
                   style={{ marginRight: "5px", color: "green" }}
@@ -64,7 +84,7 @@ function Cards() {
               alt="..."
             />
             <div class="card-body">
-              <h6 className="donation-nums"  >
+              <h6 className="donation-nums">
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
               </h6>
@@ -76,14 +96,26 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
+                <div
+                  class="progress-bar"
+                  style={{ width: "25%", backgroundColor: "orange" }}
+                ></div>
               </div>
-              <h5 class="card-title" style={{ marginTop: "15px" }}>Food Recycling </h5>
+              <h5 class="card-title" style={{ marginTop: "15px" }}>
+                Food Recycling{" "}
+              </h5>
               <p class="card-text">
-                Donate food to those in need, compost rotting fruits and vegetables, use proper drying and storage techniques, set up social catering. These measures contribute to reducing food waste, improving food sustainability, and meeting the food needs of the community.
-
+                {"Donate food to those in need, compost rotting fruits and vegetables, use proper drying and storage techniques, set up social catering. These measures contribute to reducing food waste, improving food sustainability, and meeting the food needs of the community.".slice(
+                  0,
+                  100
+                )}
+                ....
               </p>
-              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
+              <a
+                href="#"
+                className="icon-link"
+                style={{ textDecoration: "none" }}
+              >
                 {" "}
                 <svg
                   style={{ marginRight: "5px", color: "green" }}
@@ -109,7 +141,7 @@ function Cards() {
               alt="..."
             />
             <div class="card-body">
-              <h6 className="donation-nums" >
+              <h6 className="donation-nums">
                 <span style={{ color: "green" }}>$8,100</span> of{" "}
                 <span style={{ color: "orange" }}>$25,000</span> raised
               </h6>
@@ -121,14 +153,26 @@ function Cards() {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{ width: "25%", backgroundColor: 'orange' }}></div>
+                <div
+                  class="progress-bar"
+                  style={{ width: "25%", backgroundColor: "orange" }}
+                ></div>
               </div>
-              <h5 class="card-title" style={{ marginTop: "15px" }}>Food Protection</h5>
+              <h5 class="card-title" style={{ marginTop: "15px" }}>
+                Food Protection
+              </h5>
               <p class="card-text">
-                Store it at an appropriate temperature. Separate fresh from half-cooked foods. Use airtight containers and store them in the refrigerator. Freeze freezable food. Avoid exposure to outside air for long periods. Use clean tools to handle food....
-
+                {"Store it at an appropriate temperature. Separate fresh from half-cooked foods. Use airtight containers and store them in the refrigerator. Freeze freezable food. Avoid exposure to outside air for long periods. Use clean tools to handle food.".slice(
+                  0,
+                  100
+                )}
+                ....
               </p>
-              <a href="#" className="icon-link" style={{ textDecoration: "none" }}>
+              <a
+                href="#"
+                className="icon-link"
+                style={{ textDecoration: "none" }}
+              >
                 {" "}
                 <svg
                   style={{ marginRight: "5px", color: "green" }}
