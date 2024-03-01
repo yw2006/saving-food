@@ -87,14 +87,14 @@ export default function Feedbacks() {
               <div class="row m-auto">
                 {feedbacks.map((feedback, index) => {
                   return (
-                    <div class="col-md-2 m-auto bg w-100" key={index}>
+                    <div class="col-md-2 m-auto bg w-100 h-100" key={index}>
                       <SwiperSlide>
                         <section class="mx-auto w-100">
                           <div class="card testimonial-card w-100 mt-2 col-md-3">
                             <div class="mx-auto white feedback p-4">
-                              <p>
+                              <p >
                                 <i class="fas fa-quote-left"></i>
-                                {feedback.donaterfeedback}
+                                {feedback.donaterfeedback.slice(0,50)}....
                               </p>
                             </div>
                             <hr />
