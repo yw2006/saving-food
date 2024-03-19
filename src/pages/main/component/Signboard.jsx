@@ -4,7 +4,7 @@ function Signboard() {
   return (
     <div className="container board m-auto">
       <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row1 w-100 h-100">
-        <div className="pic piccontainer m-auto" style={{ marginLeft: "0px" }}>
+        <div className="pic piccontainer m-auto" >
           <div className="shine-container col-md-12 col-sm-12 col-xs-12">
             <img
               className="sora "
