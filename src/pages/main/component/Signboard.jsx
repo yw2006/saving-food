@@ -13,7 +13,7 @@ function Signboard() {
             />
           </div>
           <div class="text-block">
-            <p>For any inquiries call the hotline: 010 6290 7530</p>
+            <p>For any inquiries call the hotline: 666 888 0000</p>
           </div>
         </div>
         <div className="col text">
