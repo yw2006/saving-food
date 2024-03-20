@@ -3,8 +3,8 @@ import "../style/Banner.css";
 
 export default function Banner() {
   return (
-    <div className="baner mb-5">
-      <div className="background-overlay">
+    <div className="baner bannercontainer mb-5">
+      {/* <div className="background-overlay"> */}
         <div className="container p-3 d-flex flex-column flex-md-row align-items-center">
 
           <div className="text bannertext">
@@ -16,7 +16,7 @@ export default function Banner() {
             <Link to="/signup" className="btn btn-outline-dark rounded-pill pt-3 pb-3 ps-4 pe-4 baton">JOIN OUR TEAM</Link>
           </div>
           
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -110,9 +110,10 @@ function Donate() {
             style={{
               borderRadius: "100px",
               marginLeft: "180px",
-              width: "160px",
+              width: "13%",
               marginTop: "10px",
               height: "60px",
+              // padding:"15px",
             }}
           >
             Start Donating
