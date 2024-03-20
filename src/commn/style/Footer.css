@@ -1,10 +1,11 @@
-.backGroundFooter{
+.backGroundFooter {
     background-color: black;
     color: white;
     padding: 80px;
-    .container{
-        .row{
-            .categories{
+
+    .container {
+        .row {
+            .categories {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -12,25 +13,63 @@
             }
         }
     }
-        form{
-            display: flex;
-            flex-direction: column;
-            #adderess_input{
-                padding: 10px;
-                border-radius: 10px;
-                font-size: 18px;
-                margin-bottom: 10px;
-            }
-            .btn_submission{
-                padding: 15px;
-                background-color: rgb(113, 207, 118);
-                color: white;
-                transition: all .1s ease-in;
-                margin-top: 10px;
-                font-size: 22px;
-            }
-            .btn_submission:hover {
-                background-color: rgba(113, 207, 118, 0.712);
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        #adderess_input {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .btn_submission {
+            padding: 15px;
+            background-color: rgb(113, 207, 118);
+            color: white;
+            transition: all 0.1s ease-in;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+        .btn_submission:hover {
+            background-color: rgba(113, 207, 118, 0.712);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 50px;
+
+        .container {
+            .row {
+                .categories {
+                    flex-direction: column;
+                }
             }
         }
+
+        .staticWidth {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .mt-sm-5 {
+            margin-top: 20px;
+        }
+
+        .title_category {
+            font-size: 22px;
+        }
+
+        #adderess_input {
+            font-size: 16px;
+        }
+
+        .btn_submission {
+            font-size: 18px;
+        }
+    }
 }
+    
