@@ -58,10 +58,10 @@ padding: 0px;
         margin-left: 10%;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .bannercontainer{
         width: 100%;
-        height: 80%;
+        height: 45%;
         background-size: cover;
         background-image: url('/src/pages/main/component/pics/bannerbackground.png');
     }
