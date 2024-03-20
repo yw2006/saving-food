@@ -1,4 +1,4 @@
-.pic {
+/* .pic {
   position: relative;
 
 }
@@ -150,4 +150,138 @@
   .text-block {
     left: 112px;
   }
+} */
+
+
+
+.container.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust the height to fit the viewport */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+  .piccontainer {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .piccontainer img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .container.board {
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 20px; /* Add padding for spacing */
+  }
+}
+.text {
+  text-align: center; /* Center align the text */
+}
+
+.text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: center; /* Center align the heading */
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center; /* Center align paragraphs */
+  margin-bottom: 50px;
+}
+
+.text li {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center; /* Center align list items */
+  margin-bottom: 20px;
+}
+/* Additional styles for the rest of your elements */
+.pic {
+  position: relative;
+}
+
+.row1 {
+  background-color: rgb(213, 213, 213);
+}
+
+.text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.text li {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 27px;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Hover effect for the shine-container */
+.shine-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-container::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 15%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.shine-container:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
 }

@@ -12,6 +12,7 @@
 .svgs{
   margin-left: 30%;
   padding-top: 0.2%;
+  
 }
 
 .h-line{
@@ -96,4 +97,6 @@
   }
 .list{
     margin-left: 28%;
+    margin-left: auto; /* Set margin-left to auto to center the navbar items */
+  display: flex;
 }

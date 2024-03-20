@@ -46,3 +46,8 @@
     color: green;
 
 }
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  

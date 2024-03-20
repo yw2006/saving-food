@@ -23,7 +23,7 @@ function Cards() {
           <div class="card food-card" style={{ textAlign: "center" }}>
             <img
               src="https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="card-img-top"
+              class="card-img-top w-100"
               alt="..."
             />
 
@@ -81,7 +81,7 @@ function Cards() {
           <div class="card" style={{ textAlign: "center" }}>
             <img
               src="https://images.pexels.com/photos/15104328/pexels-photo-15104328/free-photo-of-fresh-tasty-vegetables.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="card-img-top"
+              class="card-img-top w-100"
               alt="..."
             />
             <div class="card-body">
@@ -138,7 +138,7 @@ function Cards() {
           <div class="card" style={{ textAlign: "center" }}>
             <img
               src="https://images.pexels.com/photos/3962287/pexels-photo-3962287.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="card-img-top"
+              class="card-img-top w-100"
               alt="..."
             />
             <div class="card-body">
