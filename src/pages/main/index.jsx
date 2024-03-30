@@ -9,7 +9,6 @@ import Landing from "./component/Landing";
 import Banner from "./component/Banner.jsx"
 const Main = () => (
   <>
-
     <Landing/>
     <Banner />
     <Signboard />
