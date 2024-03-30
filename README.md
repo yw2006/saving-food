@@ -10,11 +10,9 @@ Features:
 4.Recycling:  Food items that cannot be redistributed are recycled to minimize waste and promote sustainability.
 
  Technologies Used: 
-- Frontend: HTML, CSS, JavaScript, vite , react 
+- HTML, CSS, JavaScript, vite , react 
 - Additional Tools: Bootstrap for frontend design
-// in the future when we start to develeop back-end
-- Backend: Node.js, Express.js
-- Database: MongoDB
+
 
 
 Installation: 
@@ -29,7 +27,7 @@ Contributing:
 
 
 Contact: 
-For any inquiries or questions regarding the project, you can reach out to `yw012276@gamil.com`.
+- For any inquiries or questions regarding the project, you can reach out to `yw012276@gamil.com`.
 
 Acknowledgements: 
-We would like to thank the organizers of the Youth in Lead competition for providing the opportunity to showcase this project and make a positive impact in addressing food waste.
+- We would like to thank the organizers of the Youth in Lead competition for providing the opportunity to showcase this project and make a positive impact in addressing food waste.
